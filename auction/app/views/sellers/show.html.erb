@@ -1,0 +1,17 @@
+<h1>売主詳細</h1>
+
+<p>
+  <b>名前：<%= @seller.name %></b>
+</p>
+
+<p>
+  <b>住所(県)：<%= @seller.prefecture %></b>
+</p>
+
+<p>
+  <b>電話番号：<%= @seller.tel %></b>
+</p>
+
+<p>
+  <%= link_to '売り主情報を編集する', "/sellers/#{@seller.id}/edit" %>
+</p>

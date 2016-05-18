@@ -1,0 +1,19 @@
+<h1>売り主登録フォーム</h1>
+<%= form_for @seller do |f| %>
+  <p>
+    名前：<br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    住所(県)：<br />
+    <%= f.text_field :prefecture %>
+  </p>
+
+  <p>
+    電話番号：<br />
+    <%= f.number_field :tel %>
+  </p>
+
+  <%= f.submit "登録" %>
+<% end %>

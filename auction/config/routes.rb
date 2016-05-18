@@ -2,9 +2,16 @@ Rails.application.routes.draw do
   get '/items' => 'items#index'
   post '/items' => 'items#create'
   get '/items/new' => 'items#new'
-  get 'items/:id/edit' => 'items#edit'
+  get '/items/:id/edit' => 'items#edit'
   get '/items/:id' => 'items#show'
-  patch 'items/:id' => 'items#update'
+  patch '/items/:id' => 'items#update'
+
+  get '/sellers' => 'sellers#index'
+  post '/sellers' => 'sellers#create'
+  get '/sellers/new' => 'sellers#new'
+  get '/sellers/:id/edit' => 'sellers#edit'
+  get '/sellers/:id' => 'sellers#show'
+  patch '/sellers/:id' => 'sellers#update'
 
   #index,create,new,edit,show,update,destroy
 

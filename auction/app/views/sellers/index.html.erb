@@ -1,0 +1,4 @@
+<h1>売り主一覧</h1>
+<% @sellers.each do |seller| %>
+  <li><a href="/sellers/<%= seller.id %>"><%= seller.name %></a></li>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>売り主<font color="red">編集</font>フォーム</h1>
+<%= form_for @seller, url: { action: :update } do |f| %>
+  <p>
+    名前：<br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    住所：<br />
+    <%= f.text_area :prefecture %>
+  </p>
+  <p>
+    価格：<br />
+    <%= f.number_field :tel %>
+  </p>
+  <%= f.submit "更新" %>
+<% end %>
