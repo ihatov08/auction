@@ -1,3 +1,5 @@
+<h1>商品詳細</h1>
+
 <p>
   <b>商品名：<%= @item.name %></b>
 </p>
@@ -20,4 +22,8 @@
 
 <p>
   <img src="<%= @item.image_url %>">
+</p>
+
+<p>
+  <%= link_to '商品情報を編集する', "/items/#{@item.id}/edit" %>
 </p>
