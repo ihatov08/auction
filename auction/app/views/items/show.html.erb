@@ -27,3 +27,17 @@
 <p>
   <%= link_to '商品情報を編集する', "/items/#{@item.id}/edit" %>
 </p>
+
+<h1>売主詳細</h1>
+
+<p>
+  <b>名前：<%= @seller.name %></b>
+</p>
+
+<p>
+  <b>住所(県)：<%= @seller.prefecture %></b>
+</p>
+
+<p>
+  <b>電話番号：<%= @seller.tel %></b>
+</p>
