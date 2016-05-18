@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'homes#hello'
+
   get '/items' => 'items#index'
   post '/items' => 'items#create'
   get '/items/new' => 'items#new'
